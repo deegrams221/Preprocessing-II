@@ -7,12 +7,25 @@ nav{
     border-bottom: 2px dashed @navigation-border;
     width: 100%;
     margin: 0 auto;
+    @media @tablet{
+        flex-flow: column nowrap;
+        align-items:center;
+        width: 100%;
+        //background-color: red;
+        padding-bottom: 10px;
+    }
     @media @mobile{
         flex-flow: column nowrap;
         align-items:center;
         width: 100%;
         //background-color: red;
         padding-bottom: 10px;
+    }
+    h1{
+        margin-left: 24%;
+        @media @tablet{
+            margin-left: 0;
+        }
     }
     .navigation{
         margin-right:24%;
@@ -21,6 +34,16 @@ nav{
             text-decoration: none;
             color: @shark;
             font-size: 1.6rem;
+        }
+        @media @tablet{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            margin: 0;
+            padding-top: 20px;
+            //background-color: pink;
         }
         @media @mobile{
             display: flex;
