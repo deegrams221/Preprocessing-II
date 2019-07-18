@@ -335,6 +335,7 @@ nav .navigation a {
 .home .content-pick .destination .btn:hover {
   background-color: #ffffff;
   color: #1d7a73;
+  border: 1px solid #1d7a73;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -353,5 +354,6 @@ nav .navigation a {
   .home .content-pick .destination .btn:hover {
     background-color: #ffffff;
     color: #3ea5c2;
+    border: 1px solid #3ea5c2;
   }
 }
