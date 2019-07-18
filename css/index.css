@@ -355,7 +355,8 @@ nav .navigation a {
 }
 @media (max-width: 800px) {
   .home .content-destination {
-    width: 100%;
+    width: 85%;
+    justify-content: center;
   }
 }
 @media (max-width: 500px) {
