@@ -66,7 +66,7 @@
       width: 100%;
       //background-color: pink;
     }
-    
+
     img {
       border-radius: 10px;
     }
@@ -77,13 +77,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      //background-color: yellow;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 100%;
+        padding: 0 30px;
+        //background-color: pink;
+      }
 
       .btn{
         .button-style();
+        @media @mobile{
+          .button-style(@bg-color:rgb(62, 165, 194), @font:rgb(255, 255, 255));
+          width: 100%;
+        }
       }
     }
   }
