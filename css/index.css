@@ -316,10 +316,44 @@ nav .navigation a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  animation-name: stretch;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 @media (max-width: 900px) {
   .home .content-section .img-content img {
     width: 100%;
+    animation-name: stretch;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: -5s;
+    animation-direction: alternate;
+    animation-iteration-count: initial;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  @keyframes stretch {
+    0% {
+      transform: scale(0.3);
+      border-radius: 100%;
+    }
+    100% {
+      transform: scale(1.5);
+    }
   }
 }
 @media (max-width: 500px) {
@@ -348,6 +382,23 @@ nav .navigation a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  animation-name: stretch;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 .home .content-destination {
   width: 75%;

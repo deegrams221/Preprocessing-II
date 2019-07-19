@@ -50,8 +50,11 @@
 
       img {
         border-radius: 10px;
+        .image-animation(5s);
         @media @tablet{
           width: 100%;
+          .image-animation(-5s);
+
         }
         @media @mobile{
           width: 100%;
@@ -80,6 +83,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      .image-animation(10s);
     }
   }
 
