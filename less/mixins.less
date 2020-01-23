@@ -1,1 +1,39 @@
 // Mixins in here
+//Button mixins
+.button-style(@bg-color:rgb(29, 122, 115), @font:rgb(255, 255, 255)){
+  display: block;
+  background-color: @bg-color;
+  cursor: pointer;
+  width: 80%;
+  height: 40px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 4%;
+  border-radius: 10px;
+  color:@font;
+  &:hover{
+    background-color:@font;
+    color:@bg-color;
+    border: 1px solid @bg-color;
+  }
+}
+.image-animation(@delay:2s){
+  animation-name: stretch;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: @delay;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+  
+  @keyframes stretch {
+    0%{
+      transform: scale(.3);
+      border-radius: 100%;
+    }
+    100%{
+      transform: scale(1.5);
+    }
+  }
+}
